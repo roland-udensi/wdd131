@@ -1,0 +1,97 @@
+body {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #111111;
+    padding: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card,
+aside {
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card {
+    overflow: auto;
+}
+
+.card:first-child img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 0 0 10px 15px;
+}
+
+.flag-container {
+    float: left;
+    margin: 0 25px 10px 0;
+}
+
+.flag {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+.flag-description {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 5px 0 0;
+}
+
+.card-container {
+    display: grid;
+    gap: 15px;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
