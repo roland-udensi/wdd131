@@ -12,14 +12,14 @@ body {
     padding: 10px;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-around;
     background-color: #111111;
     padding: 5px;
 }
 
-nav a {
+header nav a {
     color: white;
     text-decoration: none;
 }
@@ -101,6 +101,28 @@ aside {
 
 aside {
     display: flex;
+    flex-direction: column;
+}
+
+aside nav ul {
+        width: fit-content;
+        margin: 30 auto 0;
+}
+
+aside nav {
+    flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.card h2,
+aside h2 {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: -15px -15px 15px;
 }
