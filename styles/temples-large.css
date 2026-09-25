@@ -1,0 +1,29 @@
+@media screen and (min-width: 650px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        margin-right: 3rem;
+    }
+
+    .container {
+            
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+
+    nav {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+}
+
