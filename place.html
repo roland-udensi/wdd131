@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China - Place Page</title>
+    <meta name="description"
+        content="Discover China, its rich history, beautiful landmarks, unique culture, and fascinating places to visit.">
+    <meta name="author" content="Roland Udensi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>China</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/china-large.webp" media="(min-width: 700px)">
+                <img src="images/china-small.webp" alt="The Temple of Heaven in Beijing, China">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+                <dl>
+                    <dt>Area:</dt>
+                    <dd>9,596,961 km²</dd>
+                    <dt>Population:</dt>
+                    <dd>1,425,000,000</dd>
+                    <dt>Capital:</dt>
+                    <dd>Beijing</dd>
+                    <dt>Languages:</dt>
+                    <dd>Mandarin</dd>
+                    <dt>Currency:</dt>
+                    <dd>Renminbi (CNY)</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC+8</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+86</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.cn</dd>
+                </dl>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Cloudy weather icon">
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd>8 °C</dd>
+                    <dt>Conditions:</dt>
+                    <dd>Cloudy</dd>
+                    <dt>Wind:</dt>
+                    <dd>10 km/h</dd>
+                    <dt>Wind Chill:</dt>
+                    <dd><span id="windchill"></span></dd>
+                </dl>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span> 🪷 Roland Ezennaya Udensi 🪷 China</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+:root {
+    
+    --primary: #8B0A1A;
+    --accent: #006233;
+    --bg: #eaf4ea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: var(--bg)
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border-bottom: 10px solid var(--accent);
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    border-bottom: 4px solid var(--primary)
+}
+
+.data,
+.weather {
+    background: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.data h2,
+.weather h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.weather img {
+    width: 90px;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+dl {
+    line-height: 1.9
+}
+
+dt {
+    font-weight: 700
+}
+
+dt::after {
+    content: " "
+}
+
+dd {
+    display: inline
+}
+
+.data dt,
+.data dd,
+.weather dt,
+.weather dd {
+    display: inline
+}
+
+.data dl,
+.weather dl {
+    display: block
+}
+
+.data dt,
+.weather dt {
+    font-weight: bold
+}
+
+footer {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    line-height: 1
+
+}
+
+
