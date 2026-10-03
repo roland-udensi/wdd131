@@ -48,6 +48,7 @@ main {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem;
 
 }
 
@@ -69,4 +70,14 @@ nav.open {
 .title {
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
 }

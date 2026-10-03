@@ -26,3 +26,5 @@ button.addEventListener("click", function () {
     
 });
 
+const figcontainer = document.querySelector(".container");
+
