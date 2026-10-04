@@ -1,6 +1,7 @@
-@media (min-width:700px) {
+ @media (min-width: 700px) {
+
     .hero {
-        position: relative
+        position: relative;
     }
 
     .data,
@@ -14,12 +15,12 @@
 
     .data {
         top: 20px;
-        left: 20px
+        left: 20px;
     }
 
     .weather {
         bottom: 20px;
-        right: 20px
+        right: 20px;
     }
 
     .data h2,
@@ -40,7 +41,15 @@
 
     .data dd,
     .weather dd {
-        margin-left: 4px
+        margin-left: 4px;
     }
 
-}
+    .weather h2::after {
+        content: " ⛅";
+        float: right;
+    }
+
+    .weather img {
+        display: none;
+    }
+}  
