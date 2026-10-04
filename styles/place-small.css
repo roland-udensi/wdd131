@@ -2,8 +2,9 @@
     --primary: #8B0A1A;
     --accent: #006233;
     --bg: #eaf4ea;
-    --white: #ffffff;
-    --border: #dddddd;
+    --white: #FFFFFF;
+    --border: #DDDDDD;
+    --shadow: #000000;
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
     font-family: Roboto, sans-serif;
-    background: var(--bg)
+    background: var(--bg);
 }
 
 header {
@@ -34,7 +35,7 @@ header {
 
 .data,
 .weather {
-    background: #fff;
+    background: var(--white);
     text-align: center;
     padding: 1.5rem 1rem;
     border-bottom: 1px solid var(--border);
