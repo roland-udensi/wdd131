@@ -9,7 +9,7 @@
         background: var(--white);
         width: 280px;
         padding: 0 0 1rem 0;
-        box-shadow: 0 0 15px var(shadow);
+        box-shadow: 0 0 15px var(--shadow);
     }
 
     .data {
@@ -43,13 +43,4 @@
         margin-left: 4px
     }
 
-    /* REQUIRED BY ASSIGNMENT */
-    .weather h2::after {
-        content: " ⛅";
-        float: right;
-    }
-
-    .weather img {
-        display: none
-    }
 }
