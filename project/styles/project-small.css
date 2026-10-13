@@ -1,0 +1,320 @@
+:root {
+    --deep-brown: #57352B;
+    --warm-cream: #F8F1E7;
+    --terracotta: #A84F32;
+    --white: #FFFFFF;
+    --text-color: #302721;
+    --border-color: #D8C9B9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--warm-cream);
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+a {
+    color: var(--terracotta);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.site-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--deep-brown);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo span:first-child {
+    color: var(--terracotta);
+    font-size: 1.8rem;
+}
+
+.menu-button {
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    padding: 0.4rem 0.7rem;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+.site-header nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    padding: 1rem;
+    background-color: var(--deep-brown);
+}
+
+.site-header nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] {
+    color: var(--terracotta);
+}
+
+main {
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+}
+
+.hero {
+    display: grid;
+    min-height: 420px;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    align-items: end;
+    background:
+        linear-gradient(rgba(48, 39, 33, 0.35), rgba(48, 39, 33, 0.75)),
+        url("../images/igbo-people-hero.webp") center / cover;
+    color: var(--white);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--terracotta);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero .eyebrow {
+    color: var(--white);
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.2rem;
+    border-radius: 5px;
+    background-color: var(--terracotta);
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--deep-brown);
+}
+
+.intro,
+.topics,
+.values,
+.content-section,
+.page-heading,
+.heritage-message {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.intro h2,
+.topics h2,
+.values h2,
+.content-section h2,
+.page-heading h1,
+.heritage-message h2 {
+    color: var(--deep-brown);
+}
+
+.page-heading {
+    text-align: center;
+}
+
+.topic-grid,
+.value-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.topic-card,
+.value-card {
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--warm-cream);
+}
+
+.topic-card h3,
+.value-card h3 {
+    color: var(--deep-brown);
+}
+
+.topic-card a {
+    font-weight: 700;
+}
+
+.values,
+.heritage-message {
+    background-color: var(--deep-brown);
+    color: var(--white);
+}
+
+.values h2,
+.heritage-message h2 {
+    color: var(--white);
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--deep-brown);
+    color: var(--white);
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: var(--terracotta);
+}
+
+.fact-section {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.fact-section h2 {
+    color: var(--deep-brown);
+}
+
+.form-section {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.form-section h2 {
+    color: var(--deep-brown);
+}
+
+form {
+    display: grid;
+    gap: 0.75rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form .button {
+    border: none;
+    cursor: pointer;
+}
+
+#formResponse {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.topic-card img,
+.content-section img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.topic-card img.clothing-image {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
