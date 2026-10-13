@@ -121,7 +121,7 @@ main {
     align-items: end;
     background:
         linear-gradient(rgba(48, 39, 33, 0.35), rgba(48, 39, 33, 0.75)),
-        url("../images/Igbo-People-hero.webp") center / cover;
+        url("../images/igbo-people-hero.webp") center / cover;
     color: var(--white);
 }
 
